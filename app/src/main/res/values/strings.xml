@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mega Trust Jobs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_start">Welcome to Mega Trust Jobs</string>
+    <string name="get_start">Get Start</string>
+    <string name="home">Home</string>
+    <string name="url">https://jobs.github.com/positions.json?description=api</string>
+    <string name="job_details">Job Details</string>
+    <string name="company_info">Company Info</string>
+    <string name="company_name">Company Name</string>
+    <string name="apply">Apply</string>
+    <string name="ok">Ok</string>
+    <string name="how_to_apply">How To Apply</string>
+    <string name="job_description">%1$s</string>
+    <string name="create_at">Created At : </string>
+    <string name="job_apply">%1$s</string>
+    <string name="add_to_favorite">Add to favorite</string>
+</resources>

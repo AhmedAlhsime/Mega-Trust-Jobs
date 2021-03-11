@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_regular"
+            android:includeFontPadding="false"
+            android:text="Company Name"
+            android:textColor="@color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="@dimen/_12ssp"
+            app:autoSizeMinTextSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toStartOf="@id/favorite_job"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ImageButton
+            android:id="@+id/favorite_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@id/company_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/company_name"
+            app:layout_constraintTop_toTopOf="@id/company_name" />
+
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_buildings"
+            app:layout_constraintBottom_toTopOf="@id/Job"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/company_name" />
+
+        <TextView
+            android:id="@+id/Job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/exo_bold"
+            android:includeFontPadding="false"
+            android:text="Android"
+            android:textColor="@color/colorText"
+            android:singleLine="true"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="@dimen/_10ssp"
+            app:autoSizeMinTextSize="@dimen/_6ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/company_logo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
